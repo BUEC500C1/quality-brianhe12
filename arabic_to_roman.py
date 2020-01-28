@@ -1,6 +1,14 @@
 print('---Program Start---')
 
 def arabic2roman(num):
+    #Error Check
+    if (type(num) != int):
+        print('Please use an integer')
+        return ''
+
+    if(num == 0 or num > 3999):
+        print('Please use a number between 1 - 3999')
+        return ''
 
     # Numeral KV pairs
     roman = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
