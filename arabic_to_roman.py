@@ -1,14 +1,15 @@
-print('---Program Start---')
-
 def arabic2roman(num):
+    #String Builder
+    ans = ''
+
     #Error Check
     if (type(num) != int):
         print('Please use an integer')
-        return ''
+        return ans
 
     if(num == 0 or num > 3999):
         print('Please use a number between 1 - 3999')
-        return ''
+        return ans
 
     # Numeral KV pairs
     roman = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
@@ -16,9 +17,6 @@ def arabic2roman(num):
     
     #Pointer starting at first index
     i = 0
-
-    #String Builder
-    ans = ''
 
     while(num > 0):
         if(num - value[i] >= 0):
