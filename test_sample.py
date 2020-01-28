@@ -1,6 +1,9 @@
 from arabic_to_roman import arabic2roman
 
 def test_answer():
+    assert arabic2roman(1) == "I"
+    assert arabic2roman(3) == "III"
+    assert arabic2roman(4) == "IV"
     assert arabic2roman(28) == "XXVIII"
     assert arabic2roman(49) == "XLIX"
     assert arabic2roman(571) == "DLXXI"
