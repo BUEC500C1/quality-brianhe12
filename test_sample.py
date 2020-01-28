@@ -21,3 +21,5 @@ def test_answer():
     assert arabic2roman(-1928) == ''
     assert arabic2roman('a') == ''
     assert arabic2roman(']') == ''
+    assert arabic2roman('123=') == ''
+    assert arabic2roman('2') == ''
